@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhu | CSE Portfolio — Powered by SiteGen AI</title>
+  <meta name="description" content="give a website application on protofilo for a student final year student Name: madhu cse department.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary: #2563eb;
+      --color-secondary: #1d4ed8;
+      --color-accent: #0284c7;
+      --color-bg: #ffffff;
+      --color-surface: #f8fafc;
+      --color-text: #0f172a;
+      --color-muted: #94a3b8;
+      --font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      padding: 0.75rem 1.6rem;
+      border-radius: 0.75rem;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      border: none;
+      font-size: 0.925rem;
+      letter-spacing: -0.01em;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1.5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+      opacity: 0.96;
+    }
+
+    .btn-secondary {
+      background: var(--color-surface);
+      color: var(--color-text);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .btn-secondary:hover {
+      background: #f1f5f9;
+      transform: translateY(-1.5px);
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      background: rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(37, 99, 235, 0.2);
+      border-radius: 9999px;
+      font-size: 0.775rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--color-surface);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(0, 0, 0, 0.14);
+      box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.07);
+    }
+
+    /* Section padding */
+    .section-spacious { padding: 6.5rem 0; }
+    .section-normal { padding: 4.75rem 0; }
+    .section-compact { padding: 3.25rem 0; }
+
+    /* Grids */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+
+    /* Custom CSS */
+    
+  </style>
+</head>
+<body>
+  
+      <header style="background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(16px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; height: 4.75rem;">
+          <a href="#" style="font-size: 1.45rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #0284c7); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Madhu C.
+          </a>
+          <nav style="display: flex; gap: 2rem; align-items: center;">
+            <a href="#about" style="font-size: 0.95rem; font-weight: 600; color: #475569; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#475569'">About</a><a href="#projects" style="font-size: 0.95rem; font-weight: 600; color: #475569; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#475569'">Projects</a><a href="#skills" style="font-size: 0.95rem; font-weight: 600; color: #475569; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#475569'">Skills</a><a href="#contact" style="font-size: 0.95rem; font-weight: 600; color: #475569; transition: color 0.2s;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#475569'">Contact</a>
+          </nav>
+          <div>
+            <a href="#sec-contact-1" class="btn btn-primary" style="padding: 0.65rem 1.35rem; font-size: 0.9rem;">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </header>
+
+
+      <section class="section-normal" style="position: relative; overflow: hidden; background: radial-gradient(circle at 50% 20%, rgba(185, 28, 28, 0.06) 0%, transparent 65%);">
+        <div class="container" style="text-align: center; max-width: 900px;">
+          <div class="badge" style="background: rgba(185,28,28,0.08); border-color: rgba(185,28,28,0.2); color: #2563eb"><span>🍕</span> Available for Full-Time Roles</div>
+          <h1 style="font-size: clamp(2.5rem, 5vw, 4.25rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 1.5rem; color: var(--color-text);">
+            Hi, I&#039;m Madhu. Final Year CSE Undergraduate.
+          </h1>
+          <p style="font-size: clamp(1.1rem, 2vw, 1.35rem); color: var(--color-muted); margin-bottom: 2.5rem; line-height: 1.6;">
+            Passionate about full-stack development, machine learning, and building robust software solutions. Ready for new engineering challenges.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3.5rem;">
+            <a href="#sec-features-1" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.85rem 2rem;">
+              Explore Projects →
+            </a>
+            <a href="#contact" class="btn btn-secondary" style="font-size: 1.05rem; padding: 0.85rem 1.85rem; background: #f1f5f9; border-color: #e2e8f0; color: #0f172a;">
+                    Reserve a Table
+                  </a>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <section id="features" class="section-normal" style="background: #fafaf9;">
+        <div class="container">
+          <div style="text-align: center; max-width: 750px; margin: 0 auto 3.5rem;">
+            
+            <h2 style="font-size: 2.35rem; font-weight: 800; margin-bottom: 1rem; color: var(--color-text);">
+              Engineering Highlights
+            </h2>
+            <p style="color: var(--color-muted); font-size: 1.15rem; line-height: 1.6;">
+              A selection of my core academic projects and practical software development work.
+            </p>
+          </div>
+          <div class="grid-3">
+            
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <span style="font-size: 2.25rem;">Cpu</span>
+                    
+                  </div>
+                  <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-text);">
+                    AI-Powered Healthcare Diagnostic Assistant
+                  </h3>
+                  <p style="color: var(--color-muted); font-size: 0.95rem; line-height: 1.6;">
+                    Final year capstone project utilizing deep learning CNN models for early detection of anomalies in medical imaging with 94% accuracy.
+                  </p>
+                </div>
+                <div style="margin-top: 1.75rem; pt-3; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; font-weight: 600; color: #1d4ed8;">Artisan Prepared</span>
+                  <a href="#contact" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Order / Reserve</a>
+                </div>
+              </div>
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <span style="font-size: 2.25rem;">Code</span>
+                    
+                  </div>
+                  <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-text);">
+                    Real-Time Collaborative Code Editor
+                  </h3>
+                  <p style="color: var(--color-muted); font-size: 0.95rem; line-height: 1.6;">
+                    A web-based IDE built with React, Node.js, and WebSockets allowing multiple developers to write and execute code simultaneously.
+                  </p>
+                </div>
+                <div style="margin-top: 1.75rem; pt-3; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; font-weight: 600; color: #1d4ed8;">Artisan Prepared</span>
+                  <a href="#contact" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Order / Reserve</a>
+                </div>
+              </div>
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                    <span style="font-size: 2.25rem;">Server</span>
+                    
+                  </div>
+                  <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--color-text);">
+                    Cloud-Native Inventory Management System
+                  </h3>
+                  <p style="color: var(--color-muted); font-size: 0.95rem; line-height: 1.6;">
+                    Microservices-based backend built using Spring Boot, Docker, and deployed on AWS with automated CI/CD pipelines.
+                  </p>
+                </div>
+                <div style="margin-top: 1.75rem; pt-3; border-top: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-size: 0.85rem; font-weight: 600; color: #1d4ed8;">Artisan Prepared</span>
+                  <a href="#contact" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem;">Order / Reserve</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="testimonials" class="section-normal">
+        <div class="container">
+          <div style="text-align: center; max-width: 600px; margin: 0 auto 3.5rem;">
+            <div class="badge" style="background: rgba(185,28,28,0.08); border-color: rgba(185,28,28,0.2); color: #2563eb">Guest Reviews</div>
+            <h2 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--color-text);">
+              What Faculty &amp; Mentors Say
+            </h2>
+            <p style="color: var(--color-muted);">Feedback from professors and project guides regarding my technical dedication and execution.</p>
+          </div>
+          <div class="grid-3">
+            
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06);">
+                <div style="color: #f59e0b; margin-bottom: 1rem; font-size: 1.1rem;">★★★★★</div>
+                <p style="font-style: italic; color: var(--color-muted); margin-bottom: 1.5rem; line-height: 1.6;">"Professor &amp; Head of CSE Department"</p>
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <div style="width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #0284c7); display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff;">
+                    D
+                  </div>
+                  <div>
+                    <h4 style="font-weight: 700; font-size: 0.95rem; color: var(--color-text);">Dr. Ramesh Kumar</h4>
+                    <p style="font-size: 0.8rem; color: var(--color-muted);">Verified Patron</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06);">
+                <div style="color: #f59e0b; margin-bottom: 1rem; font-size: 1.1rem;">★★★★★</div>
+                <p style="font-style: italic; color: var(--color-muted); margin-bottom: 1.5rem; line-height: 1.6;">"Senior Software Engineer &amp; Industry Mentor"</p>
+                <div style="display: flex; align-items: center; gap: 0.85rem;">
+                  <div style="width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #0284c7); display: flex; align-items: center; justify-content: center; font-weight: 700; color: #fff;">
+                    A
+                  </div>
+                  <div>
+                    <h4 style="font-weight: 700; font-size: 0.95rem; color: var(--color-text);">Ananya Sharma</h4>
+                    <p style="font-size: 0.8rem; color: var(--color-muted);">Verified Patron</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="section-normal" style="background: #fafaf9;">
+        <div class="container" style="max-width: 1050px;">
+          <div style="text-align: center; margin-bottom: 3.5rem;">
+            <div class="badge" style="background: rgba(185,28,28,0.08); border-color: rgba(185,28,28,0.2); color: #2563eb">Table Reservations</div>
+            <h2 style="font-size: 2.35rem; font-weight: 800; margin-bottom: 0.75rem; color: var(--color-text);">
+              Let&#039;s Connect
+            </h2>
+            <p style="color: var(--color-muted); font-size: 1.1rem;">I am actively seeking entry-level software engineering and development roles. Reach out for collaborations or opportunities.</p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; align-items: start;">
+            <!-- Reservation Form -->
+            <form class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06); display: flex; flex-direction: column; gap: 1.25rem;">
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.25rem;">
+                Table Reservation Form
+              </h3>
+              <div>
+                <label for="contact-name" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-text);">Full Name</label>
+                <input id="contact-name" type="text" required placeholder="Mario Rossi" style="width: 100%; padding: 0.85rem 1rem; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; color: #0f172a; font-size: 0.95rem;" />
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label for="contact-phone" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-text);">Phone</label>
+                  <input id="contact-phone" type="tel" required placeholder="+39 06 1234 5678" style="width: 100%; padding: 0.85rem 1rem; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; color: #0f172a; font-size: 0.95rem;" />
+                </div>
+                <div>
+                  <label for="contact-guests" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-text);">Party Size</label>
+                  <select id="contact-guests" style="width: 100%; padding: 0.85rem 1rem; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; color: #0f172a; font-size: 0.95rem;">
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                    <option>5+ Guests</option>
+                  </select>
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                  <label for="contact-date" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-text);">Date</label>
+                  <input id="contact-date" type="date" required style="width: 100%; padding: 0.85rem 1rem; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; color: #0f172a; font-size: 0.95rem;" />
+                </div>
+                <div>
+                  <label for="contact-time" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-text);">Time</label>
+                  <select id="contact-time" style="width: 100%; padding: 0.85rem 1rem; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; color: #0f172a; font-size: 0.95rem;">
+                    <option>18:00</option>
+                    <option>19:00</option>
+                    <option>20:00</option>
+                    <option>21:00</option>
+                    <option>22:00</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="contact-notes" style="display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--color-text);">Special Requests & Dietary Requirements</label>
+                <textarea id="contact-notes" rows="3" placeholder="Window seating, outdoor patio, anniversary..." style="width: 100%; padding: 0.85rem 1rem; background: #ffffff; border: 1px solid #cbd5e1; border-radius: 0.5rem; color: #0f172a; font-size: 0.95rem;"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem; width: 100%;">
+                Confirm Table Reservation
+              </button>
+            </form>
+
+            <!-- Opening Hours & Location Info Cards -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06);">
+                <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">🕒</div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.75rem;">
+                  Opening Hours
+                </h3>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--color-muted);">
+                  <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #e2e8f0; padding-bottom: 0.4rem;">
+                    <span style="font-weight: 600; color: var(--color-text);">Tuesday – Friday</span>
+                    <span>17:00 – 23:00</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed #e2e8f0; padding-bottom: 0.4rem;">
+                    <span style="font-weight: 600; color: var(--color-text);">Saturday & Sunday</span>
+                    <span>12:00 – 23:30</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; padding-top: 0.2rem;">
+                    <span style="font-weight: 600; color: #2563eb;">Monday</span>
+                    <span style="color: #2563eb; font-weight: 600;">Closed (Prep Day)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="border: 1px solid rgba(0, 0, 0, 0.08); box-shadow: 0 4px 20px -2px rgba(0,0,0,0.06);">
+                <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">📍</div>
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.75rem;">
+                  Location & Contact
+                </h3>
+                <div style="display: flex; flex-direction: column; gap: 0.6rem; font-size: 0.95rem; color: var(--color-muted);">
+                  <div>
+                    <span style="font-weight: 600; color: var(--color-text);">Address:</span>
+                    <div>Via della Spiga 18, 00187 Roma, Italy</div>
+                  </div>
+                  <div>
+                    <span style="font-weight: 600; color: var(--color-text);">Direct Line:</span>
+                    <div>+39 06 8892 4100</div>
+                  </div>
+                  <div>
+                    <span style="font-weight: 600; color: var(--color-text);">Inquiries:</span>
+                    <div>prenotazioni@bellaluna.it</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <footer style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 4rem 0 2.5rem;">
+        <div class="container">
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+            <div style="max-width: 340px;">
+              <div style="font-size: 1.45rem; font-weight: 800; background: linear-gradient(135deg, #2563eb, #0284c7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 0.75rem;">
+                Madhu C. - Computer Science &amp; Engineering
+              </div>
+              <p style="color: var(--color-muted); font-size: 0.95rem; line-height: 1.6;">
+                Building reliable software for the modern web.
+              </p>
+            </div>
+            <div style="display: flex; gap: 3.5rem; flex-wrap: wrap;">
+              <div>
+                <h5 style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; color: var(--color-text); margin-bottom: 1rem;">Experience</h5>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--color-muted);">
+                  <li><a href="#features" style="transition: color 0.2s;">Pizza Menu</a></li>
+                  <li><a href="#about" style="transition: color 0.2s;">Our Story</a></li>
+                  <li><a href="#testimonials" style="transition: color 0.2s;">Reviews</a></li>
+                  <li><a href="#contact" style="transition: color 0.2s;">Reservations</a></li>
+                </ul>
+              </div>
+              <div>
+                <h5 style="font-size: 0.9rem; font-weight: 700; text-transform: uppercase; color: var(--color-text); margin-bottom: 1rem;">Information</h5>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.9rem; color: var(--color-muted);">
+                  <li><a href="#contact">GitHub</a></li><li><a href="#contact">LinkedIn</a></li><li><a href="#contact">Email</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="border-top: 1px solid #e2e8f0; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; color: var(--color-muted);">
+            <div>© 2026 Madhu C. - Computer Science &amp; Engineering. All rights reserved.</div>
+            <div>Built with SiteGen AI • 100% Free Website Builder</div>
+          </div>
+        </div>
+      </footer>
+
+  <script>
+    // Accordion toggle helper
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.accordion-item');
+        const content = item.querySelector('.accordion-content');
+        const isOpen = content.style.display === 'block';
+        content.style.display = isOpen ? 'none' : 'block';
+        trigger.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+
+    // Form notification helper
+    document.querySelectorAll('form').forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) {
+          const original = btn.textContent;
+          btn.textContent = 'Submitted Successfully ✓';
+          btn.style.opacity = '0.8';
+          setTimeout(() => {
+            btn.textContent = original;
+            btn.style.opacity = '1';
+            form.reset();
+          }, 3000);
+        }
+      });
+    });
+
+    
+  </script>
+</body>
+</html>
